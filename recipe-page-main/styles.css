@@ -21,27 +21,34 @@ h1, h2{
 h1{
     margin-bottom: 0.8em;
     font-size: 2.2em;
+    color: var(--stone-900);
 }
-p, ul li{
+p, ul li, ol li, table tbody tr td{
     font-size: var(--font-body);
+    color: var(--stone-600);
   
 }
-.intro, .preparation{
+.intro, .preparation ul li, .ingredients ul li, 
+.instructions ol li, .nutrition p, table td {
     font-family: var(--font-outfit);
+    line-height: 30px;
 }
 .intro{
     margin-bottom: 30px;
-    line-height: 30px;
+    /*line-height: 30px;*/
 }
 .preparation{
     padding: 10px 20px;
     background-color: var(--rose-50);
 }
 .preparation ul{
-    padding: 20px;
+    padding: 25px;
 }
 .preparation ul li{
     padding: 5px 10px;
+}
+.preparation ul li::marker{
+    color: var(--rose-800);
 }
 .black{
     font-weight: bold;
@@ -51,4 +58,54 @@ h3{
 }
 h2{
     color: var(--brown-800);
+}
+.ingredients, .instructions{
+    padding: 10px 5px 10px 15px;
+}
+.ingredients ul, .instructions ol{
+    padding: 25px 5px 25px 25px;
+}
+.ingredients ul li, .instructions ol li{
+    padding: 5px 10px;
+}
+.ingredients ul li::marker, .instructions ol li::marker{
+    color: var(--brown-800);
+}
+.instructions ol li::marker{
+    font-weight: bold;
+}
+.instructions h2{
+    padding-top: 25px;
+}
+.nutrition{
+    padding: 25px 0 15px 0;
+}
+.nutrition p{
+    padding:25px 0 10px 0;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+table tr{
+    width: 50%;
+    border-bottom: 0.5px solid var(--stone-150);
+}
+table td{
+    height: 40px;
+    text-align: center;
+}
+#fat{
+    border-bottom: none;
+}
+#info{
+    color: var(--brown-800);
+    font-weight: bold ;
+}
+hr{
+    width: 80%;
+    margin: 0 40px;
+    color: 0.5px solid var(--stone-150);
+    opacity: 0.5;
 }
