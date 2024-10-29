@@ -109,3 +109,25 @@ hr{
     color: 0.5px solid var(--stone-150);
     opacity: 0.5;
 }
+/*media query tablet*/
+@media only screen and (min-width: 768px){
+    header{
+        padding: 32px;
+    }
+    img{
+        border-radius: 15px;
+    }
+    section{
+        padding: 0 32px 32px 32px;
+        margin:0;
+    }
+    .ingredients, .instructions, .nutrition{
+        padding: 0 32px 32px 32px;
+    }
+    .nutrition h2{
+        padding-top: 25px;
+    }
+    hr{
+        width: 90%;
+    }
+}
