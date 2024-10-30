@@ -130,6 +130,10 @@ hr{
     hr{
         width: 90%;
     }
+    .attribution{
+        margin-top: 60px;
+    }
+
 }
 @media only screen and (min-width: 1024px){
     body{
@@ -137,6 +141,7 @@ hr{
         flex-direction: column;
         align-items: center;
         background-color: var(--rose-50);
+        margin: 100px;
     }
     main, header{
         width: 768px;
